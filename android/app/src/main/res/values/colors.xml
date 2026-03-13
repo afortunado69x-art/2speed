@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF080608</color>
+    <color name="void_bg">#FF0D0A0F</color>
+    <color name="gold">#FFC8A040</color>
+    <color name="blood">#FF8B1A1A</color>
+    <color name="crimson">#FFB22020</color>
+    <color name="bone">#FFD4C8E0</color>
+    <color name="stone">#FF221929</color>
+
+    <!-- Status bar / nav bar -->
+    <color name="statusBarColor">#FF080608</color>
+    <color name="navigationBarColor">#FF080608</color>
+</resources>

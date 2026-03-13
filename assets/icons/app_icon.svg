@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Background: deep void -->
+  <rect width="1024" height="1024" rx="200" fill="#0D0A0F"/>
+
+  <!-- Subtle radial glow -->
+  <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+    <stop offset="0%" stop-color="#8B1A1A" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#0D0A0F" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1024" height="1024" rx="200" fill="url(#glow)"/>
+
+  <!-- Outer gold border frame -->
+  <rect x="60" y="60" width="904" height="904" rx="140"
+        fill="none" stroke="#C8A040" stroke-width="6" stroke-opacity="0.35"/>
+  <rect x="80" y="80" width="864" height="864" rx="120"
+        fill="none" stroke="#C8A040" stroke-width="2" stroke-opacity="0.15"/>
+
+  <!-- Corner ornaments -->
+  <!-- TL -->
+  <polyline points="80,140 80,80 140,80" fill="none" stroke="#C8A040" stroke-width="10" stroke-opacity="0.5" stroke-linecap="round"/>
+  <!-- TR -->
+  <polyline points="884,80 944,80 944,140" fill="none" stroke="#C8A040" stroke-width="10" stroke-opacity="0.5" stroke-linecap="round"/>
+  <!-- BL -->
+  <polyline points="80,884 80,944 140,944" fill="none" stroke="#C8A040" stroke-width="10" stroke-opacity="0.5" stroke-linecap="round"/>
+  <!-- BR -->
+  <polyline points="944,884 944,944 884,944" fill="none" stroke="#C8A040" stroke-width="10" stroke-opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Book body -->
+  <rect x="220" y="200" width="584" height="680" rx="16"
+        fill="#1A1008" stroke="#6B4226" stroke-width="4"/>
+  <!-- Book spine shadow left -->
+  <rect x="220" y="200" width="50" height="680" rx="8"
+        fill="#0A0803"/>
+  <!-- Spine highlight line -->
+  <line x1="270" y1="210" x2="270" y2="870"
+        stroke="#C8A040" stroke-width="1.5" stroke-opacity="0.2"/>
+
+  <!-- Gold top-edge gilding -->
+  <rect x="220" y="200" width="584" height="12" rx="8"
+        fill="#C8A040" opacity="0.25"/>
+
+  <!-- Decorative border inside book cover -->
+  <rect x="290" y="240" width="450" height="600" rx="4"
+        fill="none" stroke="#C8A040" stroke-width="2" stroke-opacity="0.18"/>
+  <rect x="300" y="250" width="430" height="580" rx="2"
+        fill="none" stroke="#C8A040" stroke-width="1" stroke-opacity="0.1"/>
+
+  <!-- Gothic cross / crucifix -->
+  <!-- Vertical bar -->
+  <rect x="492" y="290" width="40" height="380" rx="8"
+        fill="#8B1A1A"/>
+  <!-- Horizontal bar -->
+  <rect x="400" y="370" width="224" height="40" rx="8"
+        fill="#8B1A1A"/>
+  <!-- Cross glow -->
+  <rect x="492" y="290" width="40" height="380" rx="8"
+        fill="none" stroke="#CC3030" stroke-width="2" opacity="0.5"/>
+  <rect x="400" y="370" width="224" height="40" rx="8"
+        fill="none" stroke="#CC3030" stroke-width="2" opacity="0.5"/>
+
+  <!-- Cross center diamond -->
+  <polygon points="512,358 530,390 512,422 494,390"
+           fill="#CC3030" stroke="#C8A040" stroke-width="2"/>
+
+  <!-- Gold ornament above cross -->
+  <text x="512" y="288" text-anchor="middle"
+        font-size="48" fill="#C8A040" opacity="0.6"
+        font-family="serif">✦</text>
+
+  <!-- Rune text strip at bottom of book -->
+  <rect x="290" y="778" width="450" height="2" rx="1"
+        fill="#C8A040" opacity="0.25"/>
+  <text x="512" y="816" text-anchor="middle"
+        font-size="28" fill="#C8A040" opacity="0.45"
+        font-family="serif" letter-spacing="8">GrimRead</text>
+  <rect x="290" y="826" width="450" height="2" rx="1"
+        fill="#C8A040" opacity="0.15"/>
+
+  <!-- Stars / ornaments flanking cross base -->
+  <text x="390" y="690" text-anchor="middle"
+        font-size="36" fill="#C8A040" opacity="0.3"
+        font-family="serif">❧</text>
+  <text x="634" y="690" text-anchor="middle"
+        font-size="36" fill="#C8A040" opacity="0.3"
+        font-family="serif" transform="scale(-1,1) translate(-1268,0)">❧</text>
+
+  <!-- Blood drop drip at cross bottom -->
+  <ellipse cx="512" cy="676" rx="10" ry="14"
+           fill="#B22020" opacity="0.8"/>
+  <ellipse cx="512" cy="664" rx="7" ry="4"
+           fill="#CC3030" opacity="0.6"/>
+</svg>

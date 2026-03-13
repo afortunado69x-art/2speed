@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+  <!-- ── App identity ─────────────────────────────── -->
+  <key>CFBundleName</key>
+  <string>GrimRead</string>
+
+  <key>CFBundleDisplayName</key>
+  <string>GrimRead</string>
+
+  <key>CFBundleIdentifier</key>
+  <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+  <key>CFBundleVersion</key>
+  <string>$(FLUTTER_BUILD_NUMBER)</string>
+
+  <key>CFBundleShortVersionString</key>
+  <string>$(FLUTTER_BUILD_NAME)</string>
+
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+
+  <key>CFBundleSignature</key>
+  <string>????</string>
+
+  <key>CFBundleExecutable</key>
+  <string>$(EXECUTABLE_NAME)</string>
+
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+
+  <!-- ── Flutter engine ────────────────────────────── -->
+  <key>CADisableMinimumFrameDurationOnPhone</key>
+  <true/>
+
+  <key>UIApplicationSupportsIndirectInputEvents</key>
+  <true/>
+
+  <!-- ── Orientations ──────────────────────────────── -->
+  <key>UISupportedInterfaceOrientations</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+  </array>
+
+  <key>UISupportedInterfaceOrientations~ipad</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+  </array>
+
+  <!-- ── Status bar ────────────────────────────────── -->
+  <key>UIStatusBarStyle</key>
+  <string>UIStatusBarStyleLightContent</string>
+
+  <key>UIViewControllerBasedStatusBarAppearance</key>
+  <false/>
+
+  <!-- ── Launch screen ─────────────────────────────── -->
+  <key>UILaunchStoryboardName</key>
+  <string>LaunchScreen</string>
+
+  <!-- ── Permissions (with usage descriptions) ─────── -->
+  <!-- File access -->
+  <key>NSDocumentsFolderUsageDescription</key>
+  <string>GrimRead needs access to your documents to open book files (TXT, EPUB, FB2, PDF, DOCX).</string>
+
+  <key>NSDownloadsFolderUsageDescription</key>
+  <string>GrimRead needs access to your Downloads folder to import books.</string>
+
+  <key>UIFileSharingEnabled</key>
+  <true/>
+
+  <key>LSSupportsOpeningDocumentsInPlace</key>
+  <true/>
+
+  <!-- ── Supported file types ───────────────────────── -->
+  <key>CFBundleDocumentTypes</key>
+  <array>
+    <!-- Plain text -->
+    <dict>
+      <key>CFBundleTypeName</key><string>Plain Text</string>
+      <key>CFBundleTypeRole</key><string>Viewer</string>
+      <key>LSItemContentTypes</key>
+      <array><string>public.plain-text</string></array>
+    </dict>
+    <!-- EPUB -->
+    <dict>
+      <key>CFBundleTypeName</key><string>EPUB Book</string>
+      <key>CFBundleTypeRole</key><string>Viewer</string>
+      <key>LSItemContentTypes</key>
+      <array><string>org.idpf.epub-container</string></array>
+    </dict>
+    <!-- PDF -->
+    <dict>
+      <key>CFBundleTypeName</key><string>PDF Document</string>
+      <key>CFBundleTypeRole</key><string>Viewer</string>
+      <key>LSItemContentTypes</key>
+      <array><string>com.adobe.pdf</string></array>
+    </dict>
+    <!-- FB2 -->
+    <dict>
+      <key>CFBundleTypeName</key><string>FictionBook</string>
+      <key>CFBundleTypeRole</key><string>Viewer</string>
+      <key>LSItemContentTypes</key>
+      <array><string>public.xml</string></array>
+      <key>CFBundleTypeExtensions</key>
+      <array><string>fb2</string></array>
+    </dict>
+    <!-- DOCX -->
+    <dict>
+      <key>CFBundleTypeName</key><string>Word Document</string>
+      <key>CFBundleTypeRole</key><string>Viewer</string>
+      <key>LSItemContentTypes</key>
+      <array><string>org.openxmlformats.wordprocessingml.document</string></array>
+    </dict>
+    <!-- RTF -->
+    <dict>
+      <key>CFBundleTypeName</key><string>Rich Text</string>
+      <key>CFBundleTypeRole</key><string>Viewer</string>
+      <key>LSItemContentTypes</key>
+      <array><string>public.rtf</string></array>
+    </dict>
+    <!-- HTML -->
+    <dict>
+      <key>CFBundleTypeName</key><string>HTML Document</string>
+      <key>CFBundleTypeRole</key><string>Viewer</string>
+      <key>LSItemContentTypes</key>
+      <array><string>public.html</string></array>
+    </dict>
+    <!-- MOBI -->
+    <dict>
+      <key>CFBundleTypeName</key><string>MOBI Book</string>
+      <key>CFBundleTypeRole</key><string>Viewer</string>
+      <key>CFBundleTypeExtensions</key>
+      <array><string>mobi</string></array>
+    </dict>
+  </array>
+
+  <!-- ── URL Schemes (for file association) ────────── -->
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLName</key>
+      <string>com.grimread.speedreader</string>
+      <key>CFBundleURLSchemes</key>
+      <array><string>grimread</string></array>
+    </dict>
+  </array>
+
+  <!-- ── Exported UTIs ──────────────────────────────── -->
+  <key>UTExportedTypeDeclarations</key>
+  <array>
+    <dict>
+      <key>UTTypeIdentifier</key>
+      <string>com.grimread.fb2</string>
+      <key>UTTypeDescription</key>
+      <string>FictionBook 2.0</string>
+      <key>UTTypeConformsTo</key>
+      <array><string>public.xml</string></array>
+      <key>UTTypeTagSpecification</key>
+      <dict>
+        <key>public.filename-extension</key>
+        <array><string>fb2</string></array>
+      </dict>
+    </dict>
+  </array>
+
+</dict>
+</plist>

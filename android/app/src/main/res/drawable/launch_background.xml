@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Gothic splash screen background.
+    Shows a dark void with a gold cross ornament while Flutter loads.
+    Replace with your actual splash asset if desired.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base: deep gothic black -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#0D0A0F"/>
+        </shape>
+    </item>
+
+    <!-- Subtle radial red glow at top -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#148B1A1A"/>
+            <size android:width="400dp" android:height="200dp"/>
+        </shape>
+        <item android:gravity="top|center_horizontal"
+              android:top="-60dp"/>
+    </item>
+
+    <!-- Center icon (splash_icon.xml vector) -->
+    <item android:gravity="center">
+        <inset android:inset="80dp">
+            <shape android:shape="rectangle">
+                <solid android:color="#000000"/>
+            </shape>
+        </inset>
+    </item>
+</layer-list>
