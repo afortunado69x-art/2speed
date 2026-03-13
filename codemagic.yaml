@@ -15,4 +15,5 @@ workflows:
     publishing:
       email:
         recipients:
-          - твой_email@gmail.com # Впиши свою почту здесь
+          - afortunado69x@gmail.com
+
